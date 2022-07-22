@@ -7,7 +7,7 @@ namespace JsonDecimalToObject
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            Console.WriteLine("Install-Package Newtonsoft.Json -Version 13.0.1");
 
             MonkeyService service = new MonkeyService();
 
