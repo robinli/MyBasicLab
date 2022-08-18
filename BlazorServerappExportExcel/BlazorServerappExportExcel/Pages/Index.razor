@@ -1,0 +1,15 @@
+﻿@page "/"
+@using BlazorServerappExportExcel.Data;
+@inject IJSRuntime iJSRuntime;
+
+
+<h1>Blazor Excel Generate !</h1>
+<button class="btn btn-primary" @onclick="GenerateExcel">Generate Excel</button>
+
+@code{
+    private void GenerateExcel()
+    {
+        Student student=new Student();
+        student.GenerateExcel(iJSRuntime);
+    }
+}
